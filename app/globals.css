@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Andean-inspired color palette */
+  --color-earth: #3F2E1E;
+  --color-terracotta: #C45C3B;
+  --color-gold: #C9A227;
+  --color-deep-blue: #1E3A5F;
+  --color-sage: #5C6B4A;
+  --color-cream: #F5F0E6;
+  --color-stone: #6B5F52;
+  --color-white: #FFFFFF;
+  --color-off-white: #F9F6F0;
+
+  --background: var(--color-off-white);
+  --foreground: var(--color-earth);
 }
 
 @theme inline {
@@ -12,15 +23,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  font-family: var(--font-geist-sans);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Cultural design utilities */
+.text-terracotta { color: var(--color-terracotta); }
+.text-gold { color: var(--color-gold); }
+.text-deep-blue { color: var(--color-deep-blue); }
+.bg-earth { background-color: var(--color-earth); }
+.bg-terracotta { background-color: var(--color-terracotta); }
+.bg-gold { background-color: var(--color-gold); }
+.bg-cream { background-color: var(--color-cream); }
+.border-gold { border-color: var(--color-gold); }
+
+.section-padding {
+  @apply px-6 py-20 md:py-24;
 }
