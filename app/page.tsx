@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ApptahualpaLogo } from "@/components/Logo";
 
 export default function Apptahualpa() {
   return (
@@ -6,8 +7,11 @@ export default function Apptahualpa() {
 
       {/* Hero */}
       <section className="pt-20 pb-16 px-6 max-w-5xl mx-auto text-center">
-        <div className="inline-block mb-4 px-4 py-1 rounded-full bg-[#C45C3B]/10 text-[#C45C3B] text-sm tracking-[0.05em]">
-          Tawantinsuyu • The Land of the Four Regions
+        <div className="flex justify-center mb-6">
+          <div className="scale-90">
+            {/* Using the new logo component */}
+            <ApptahualpaLogo />
+          </div>
         </div>
         
         <h1 className="text-6xl md:text-7xl font-semibold tracking-tighter leading-none mb-6">
@@ -160,6 +164,49 @@ export default function Apptahualpa() {
                 </p>
                 <div className="text-xs text-[#C45C3B]">Peru • All Regions</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stories from the Andes */}
+      <section className="section-padding bg-[#F5F0E6]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="mb-12">
+            <div className="text-[#C45C3B] text-sm tracking-[0.1em] mb-3">THE ARCHIVE</div>
+            <h2 className="text-5xl tracking-tight font-semibold mb-4">Stories from the Andes</h2>
+            <p className="max-w-2xl text-[#6B5F52]">
+              Every app we build begins with a story. Here are some of the living narratives 
+              that inspire our work.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white p-8 rounded-2xl border border-[#3F2E1E]/10">
+              <div className="text-[#C45C3B] text-xs tracking-[0.1em] mb-3">PERU • QUECHUA</div>
+              <h3 className="font-semibold text-xl mb-3">The Weaving of Time</h3>
+              <p className="text-[#6B5F52] text-sm">
+                In the high Andes, women still weave the patterns of the stars into textiles. 
+                These are not just clothes — they are maps of the cosmos and family histories.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl border border-[#3F2E1E]/10">
+              <div className="text-[#C45C3B] text-xs tracking-[0.1em] mb-3">BOLIVIA • AYMARA</div>
+              <h3 className="font-semibold text-xl mb-3">The Lake That Remembers</h3>
+              <p className="text-[#6B5F52] text-sm">
+                Lake Titicaca is said to hold the memory of the first Incas. Elders tell that 
+                the lake itself teaches the children how to read the weather and the seasons.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl border border-[#3F2E1E]/10">
+              <div className="text-[#C45C3B] text-xs tracking-[0.1em] mb-3">ECUADOR • KICHWA</div>
+              <h3 className="font-semibold text-xl mb-3">The Mountains That Speak</h3>
+              <p className="text-[#6B5F52] text-sm">
+                In the Ecuadorian Andes, mountains are not scenery — they are living beings. 
+                Communities still hold conversations with the peaks through offerings and song.
+              </p>
             </div>
           </div>
         </div>
